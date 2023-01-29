@@ -259,3 +259,17 @@ html {
   margin-top: 20px;
   margin-right: 50px;
 }
+
+.nameTitle {
+  position: absolute;
+  padding-top: 200px;
+  padding-left: 400px;
+}
+.nameTitle h1 {
+  font-size: 50px;
+}
+.nameTitle img {
+  position: relative;
+  left: 500px;
+  bottom: 200px;
+}
