@@ -142,6 +142,8 @@ h1,h2,h3,h4,p{
     align-items: center;
     min-height: 45vh;
     background-color: #DFE0FC;
+   
+    
     .contactSectionContainer{
         display: flex;
         align-items: center;
@@ -150,6 +152,10 @@ h1,h2,h3,h4,p{
     .socialLinks{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        margin-right: 200px;
+       
+        
 
     }
 
@@ -161,5 +167,9 @@ h1,h2,h3,h4,p{
         input, textarea{
                 width: 100%;
         }
+    }
+    .center{
+        background-color: #FBAF01;
+        padding: 10px 20px 10px;
     }
 }
