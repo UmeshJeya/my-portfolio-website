@@ -474,3 +474,11 @@ h1, h2, h3, h4, p {
 .contactSection form input, .contactSection form textarea {
   width: 100%;
 }
+
+footer {
+  background-color: #3D48AE;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
