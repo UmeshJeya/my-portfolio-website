@@ -1,0 +1,165 @@
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+
+
+.skillSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D48AE;
+    color: #fff;
+    min-height: 300px;
+        
+        .skillTitleContainer {
+            width: 15%;
+            margin-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            h3{
+                margin-bottom: 30px;
+            }
+            
+        }
+
+        .skillListContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            text-transform: none;
+            
+
+            ul {
+                margin-right: 50px;
+                padding: 0;
+
+                li {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+
+.nameTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+
+    div{
+      margin-right: 10px;
+    }
+    img{
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    
+}
+
+.aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: #E7E8EE;
+
+    div {
+        margin-left: 20px;
+        width: 40%;
+    }
+
+    img {
+        width: 15%;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+
+}
+
+
+.projectsSection{
+    h2{
+      
+    }
+    .projectColumn{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .project{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        .projectImageContainer{
+            width: 50%;
+            margin-right: 50px;
+            img{
+                width: 100%;
+            }
+        }
+        .projectInfoContainer{
+            width: 50%;
+
+            .linkContainer{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                a{
+                    width: 150px;
+                    height: 30px;
+                    color: black;
+                    background-color: #FBAF01;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+.contactSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+    background-color: #DFE0FC;
+    .contactSectionContainer{
+        display: flex;
+        align-items: center;
+      
+    }
+    .socialLinks{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .infoSection{
+        width: 20%;
+    }
+    form{
+        width: 50%;
+        input, textarea{
+                width: 100%;
+        }
+    }
+}
