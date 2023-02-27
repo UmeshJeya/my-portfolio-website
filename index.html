@@ -21,20 +21,22 @@
                     <a class="contactBar" href="#contact">get in touch</a>
             </nav>
         </header>
+  
+
         <section class="nameTitle">
         <div>
             <h2>umesh jeyathevan</h2>
             <p>toronto based web developer</p>
         </div>
-        <img src="./assets/umesh-profile.jpg" alt="author">
+        
         </section>
 <!-- About Section -->
         <section class="aboutMe">
-        <img src="./assets/umesh.jpg" alt="profile picture">
-            <div>
+            <img src="./assets/umesh.jpg" alt="profile picture">
+            <div id="about">
             <h2>about me</h2>
             <p>Hello, My name is Umesh and I am a Front End Web Developer with a Behavior Science background. I strive to combine my knowledge of accessbility to create and build user - friendly and accessible applications for all! </p>
-        </div>
+            </div>
         </section>  
 <!-- End of About -->
 <!-- Start of Skill Section -->
@@ -66,13 +68,16 @@
 <!-- End of Skill Section -->
 <!-- Start of Project Section -->
         <section class="projectsSection">
-            <div class="projectColumn">
+          <div id="projects">
             <h2>Projects</h2>
             <div class="projectGallery">
                 <div class="project">
                         <div class="projectImageContainer">
-                            <img src="./assets/arceus.jpg" alt="pokedex">
+                            <img src="./assets/pokemon-151.jpg" alt="pokedex">
+                            <img src="./assets/meme-collage.jpg" alt="memes">
+                            <img src="./assets/word-pic.png" alt="word">
                         </div>
+                        
                         <div class="projectInfoContainer">
                             <h3>Pokedex</h3>
                             <h4>HTML, CSS, JAVASCRIPT</h4>
@@ -80,12 +85,32 @@
                             <div class="linkContainer">
                                 <a href="https://thepokedexproject.netlify.app/">Live Site</a>
                                 <a href="https://github.com/Pokedex-Project/Pokedex-Project">View Code</a>
-
                             </div>
+                        
+                            
+                        <div class="memeDiv">
+                            <h3>Meme Generator</h3>
+                            <h4>HTML, CSS, JAVASCRIPT</h4>
+                            <p>I created this website to help Pokemon trainers all over the world to look up their favourite pokemon from generation 1 using the PokeAPI.</p>
+                            </div>
+                            <div class="linkContainer">
+                                <a href="https://thepokedexproject.netlify.app/">Live Site</a>
+                                <a href="https://github.com/Pokedex-Project/Pokedex-Project">View Code</a>
+                            </div>
+                        
+                            
+                        <div class="wordDiv">
+                            <h3>Word party</h3>
+                            <h4>HTML, CSS, JAVASCRIPT</h4>
+                            <p>I created this website to help Pokemon trainers all over the world to look up their favourite pokemon from generation 1 using the PokeAPI.</p>
+                            <div class="linkContainer">
+                                <a href="https://thepokedexproject.netlify.app/">Live Site</a>
+                                <a href="https://github.com/Pokedex-Project/Pokedex-Project">View Code</a>
+                            </div>
+                        
                         </div>
-                </div>
-            </div>
-        </div>
+                 </div>
+          </div>
     </section>
     <!-- End of Project Section -->
     <!-- Start of Contact Section -->
@@ -100,7 +125,8 @@
                     <a href="mailto: umeshk.jeyathevan@gmail.com"><i class="fa-solid fa-envelope"></i></a> 
                 </div>
             </div>
-            <form onsubmit="event.preventDefault(); validateForm()">
+            <div id="contact">
+            <form class="formStyle" onsubmit="event.preventDefault(); validateForm()">
                 <label for="name">Name:</label>
                 <input type="text" id="name" placeholder="Your name">
                 <small class="error"></small>
@@ -120,10 +146,11 @@
                 </div>
             </form>
         </div>
+    </div>
     </section>
 <!-- End of Contact Section -->
 <!-- Start of Footer -->
-    <footer>Built in 2023 by Umesh Jeyathevan</footer>
+    <footer>Built by Umesh Jeyathevan - Juno College 2023</footer>
 <!-- End of Footer -->
 <script src="./script.js"></script>
 </body>

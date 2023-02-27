@@ -226,6 +226,11 @@ html {
   overflow: hidden;
 }
 
+@media (max-width: 1700px) {
+  .project {
+    margin-top: 400px;
+  }
+}
 header, p {
   font-size: 20px;
 }
@@ -286,7 +291,7 @@ header .contactBar {
   margin-top: 10px;
 }
 
-h1, h2, h3, h4, p {
+* {
   margin: 0;
   padding: 0;
 }
@@ -417,9 +422,16 @@ h1, h2, h3, h4, p {
 }
 .projectsSection .project .projectImageContainer img {
   width: 100%;
+  margin: 40px;
+  border-radius: 10%;
 }
 .projectsSection .project .projectInfoContainer {
-  width: 50%;
+  width: 100%;
+  padding: 200px;
+}
+.projectsSection .project .projectInfoContainer .memeDiv, .projectsSection .project .projectInfoContainer .wordDiv {
+  padding-top: 170px;
+  padding-bottom: 100px;
 }
 .projectsSection .project .projectInfoContainer .linkContainer {
   display: -webkit-box;
@@ -462,9 +474,7 @@ h1, h2, h3, h4, p {
   background-color: #DFE0FC;
 }
 .contactSection .contactSectionContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: contents;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -479,7 +489,8 @@ h1, h2, h3, h4, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 200px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .contactSection .infoSection {
   width: 20%;
@@ -493,6 +504,10 @@ h1, h2, h3, h4, p {
 .contactSection .center {
   background-color: #FBAF01;
   padding: 10px 20px 10px;
+}
+
+.formStyle {
+  text-transform: uppercase;
 }
 
 footer {
