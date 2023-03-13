@@ -1,51 +1,30 @@
-const nameInput = document.querySelector("#name");
-const email = document.querySelector("#email");
-const message = document.querySelector("#message");
-const success = document.querySelector("#success");
-const errorNodes = document.querySelectorAll(".error");
+const form = document.getElementById("form");
 
-
-function validateForm(){
-
-    clearMessages();
-
-    if(nameInput.value.length < 1){
-        errorNodes[0].innerText = "Name cannot be blank";
-        nameInput.classList.add("error-border");
-        errorFlag = true;
-    }
-
-    if(!emailIsValid(email.value)){
-        errorNodes[1].innerText = "Invalid email";
-        email.classList.add("error-border");
-        errorFlag = true;
-    }
-
-    if(messageInput.value.length < 1){
-        errorNodes[2].innerText = "Please enter a message";
-        message.classList.add("error-border");
-        errorFlag = true;
-    }
-
-    if(!errorFlag){
-        success.innerText = "Success!";
-    }
+async function handleSubmit(event) {
+    event.preventDefault();
+    const status = document.getElementById("formStatus");
+    const data = new FormData(event.target);
+    fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            status.innerHTML = "Email sent!";
+            form.reset()
+        } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+            })
+        }
+    }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+    });
 }
-
-function clearMessages(){
-    for(let i = 0; i < errorNodes.length; i++){
-        errorNodes[i].innerText = "";
-    }
-    success.innerText = "";
-    nameInput.classList.remove("error-border");
-    email.classList.remove("error-border");
-    message.classList.remove("error-border");
-}
-
-function emailIsValid(email){
-    let pattern = /\S+@\S+\.\S+/;
-    return pattern.test(email);
-}
-
-
-
+form.addEventListener("submit", handleSubmit)

@@ -9,7 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Itim&family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>MyPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal&display=swap" rel="stylesheet">
+    <title>Umesh Jeyathevan | Toronto Web Developer</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.png"/>
 </head>
 <body>
     <header>
@@ -45,25 +55,17 @@
             <h3>skills</h3>
                 </div>
             <div class="skillListContainer">
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Sass</li>
-                <li>JavaScript</li>
-            </ul> 
-            <ul>
-                <li>React</li>
-                <li>Firebase</li>
-                <li>Git and GitHub</li>
-                <li>Netlify</li>
-            </ul>  
-            <ul>
-                <li>Using REST APIs with AJAX</li>
-                <li>Web accessibility</li>
-                <li>Paired programming</li>
-                <li>Project management</li>
-            </ul>
-                </div>
+                <ul>
+                <img src="./assets/HTML.png" class="image1" alt="HTML">
+                <img src="./assets/CSS.png" class="image2" alt="CSS">
+                <img src="./assets/SASS.png" class="image3" alt="SASS">
+                <img src="./assets/java-script.png" class="image4" alt="JavaScript">
+                <img src="./assets/react.png" class="image5" alt="React">
+                <img src="./assets/fire-base.png" class="image6" alt="Firebase">
+                <img src="./assets/git-hub.png" class="image7" alt="Github">
+                <img src="./assets/netlify.png" class="image8" alt="Netlify">
+                </ul>  
+            </div>
         </section>
 <!-- End of Skill Section -->
 <!-- Start of Project Section -->
@@ -80,8 +82,8 @@
                         
                         <div class="projectInfoContainer">
                             <h3>Pokedex</h3>
-                            <h4>HTML, CSS, JAVASCRIPT</h4>
-                            <p>I created this website to help Pokemon trainers all over the world to look up their favourite pokemon from generation 1 using the PokeAPI.</p>
+                            <h4>HTML | CSS | SASS | PAIR PROGRAMMING | GITHUB | RESTful API</h4>
+                            <p>I created this website along with another developer to help Pokemon trainers all over the world to look up their favourite pokemon from generation 1!</p>
                             <div class="linkContainer">
                                 <a href="https://thepokedexproject.netlify.app/">Live Site</a>
                                 <a href="https://github.com/Pokedex-Project/Pokedex-Project">View Code</a>
@@ -90,22 +92,22 @@
                             
                         <div class="memeDiv">
                             <h3>Meme Generator</h3>
-                            <h4>HTML, CSS, JAVASCRIPT</h4>
-                            <p>I created this website to help Pokemon trainers all over the world to look up their favourite pokemon from generation 1 using the PokeAPI.</p>
+                            <h4>REACT | GITHUB | CSS | RESTful API</h4>
+                            <p>I created a meme generator app that renders memes from an API onto the page which then allows the user to pick a meme and customize the words that will go onto the meme.</p>
                             </div>
                             <div class="linkContainer">
-                                <a href="https://thepokedexproject.netlify.app/">Live Site</a>
-                                <a href="https://github.com/Pokedex-Project/Pokedex-Project">View Code</a>
+                                <a href="https://meme-generatr.netlify.app/">Live Site</a>
+                                <a href="https://github.com/UmeshJeya/meme-generator">View Code</a>
                             </div>
                         
                             
                         <div class="wordDiv">
                             <h3>Word party</h3>
-                            <h4>HTML, CSS, JAVASCRIPT</h4>
-                            <p>I created this website to help Pokemon trainers all over the world to look up their favourite pokemon from generation 1 using the PokeAPI.</p>
+                            <h4>REACT | GITHUB | CSS | RESTful API | FIREBASE | PAIR PROGRAMMING</h4>
+                            <p>I created an app along with 2 other developers to help users expand their vocabulary and assist with creating rhymes. The app was created using React and Firebase along with an API to search and render the words to the page.</p>
                             <div class="linkContainer">
-                                <a href="https://thepokedexproject.netlify.app/">Live Site</a>
-                                <a href="https://github.com/Pokedex-Project/Pokedex-Project">View Code</a>
+                                <a href="https://wordparty.netlify.app/">Live Site</a>
+                                <a href="https://github.com/Word-Party-46/word-party">View Code</a>
                             </div>
                         
                         </div>
@@ -125,28 +127,19 @@
                     <a href="mailto: umeshk.jeyathevan@gmail.com"><i class="fa-solid fa-envelope"></i></a> 
                 </div>
             </div>
-            <div id="contact">
-            <form class="formStyle" onsubmit="event.preventDefault(); validateForm()">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Your name">
-                <small class="error"></small>
-                
-                <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="Your email">
-                <small class="error"></small>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" placeholder="Your message" rows="6"></textarea>
-                <small class="error"></small>
-                
-                <div class="center">
-                    <input type="submit" value="Send Message">
-                    <p id="success"></p>
-
+        <div id="contact" class="formInput">
+                    <form id="form" class="form" action="https://formspree.io/f/xdovdkjq" method="POST">
+                        <!-- <label for="name">Name</label> -->
+                        <input type="text" name="name" placeholder="Name">
+                        <!-- <label for="email">Email Address</label> -->
+                        <input type="email" name="email" placeholder="Email Address">
+                        <!-- <label for="message">Message</label> -->
+                        <textarea type="text" name="message" placeholder="Message"></textarea>
+                        <button type="formSubmitButton">Submit</button>
+                        <p id="formStatus"></p>
+                    </form>
                 </div>
-            </form>
         </div>
-    </div>
     </section>
 <!-- End of Contact Section -->
 <!-- Start of Footer -->
