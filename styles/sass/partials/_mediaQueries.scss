@@ -1,28 +1,146 @@
-@media (max-width: 848px) {
-    .aboutMe {
-            display: flex;
+// Query for Tablets
+@media (max-width: 768px) {
+    .aboutMe{
             flex-direction: column;
+
+        .aboutProfilePic {
+            width: 250px;
+        }
+
+        .aboutMeInfo {
+            width: 60%;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            text-align: center;
         }
     }
 
-@media (max-width: 738px) {
-    .nameTitle{
-        text-align: center;
+    .skillSection {
+        flex-direction: column;
+    }
+
+    .projectsSection {
+        .project {
+            padding: 0 25px;
+    
+            .projectImageContainer {
+                width: 55%;
+            }
+            .projectInfoContainer {
+                width: 45%;
+            }
+        }
+    }
+
+    .contactSection {
+        flex-direction: column;
+        padding: 20px 0;
+        
+        .infoSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: initial;
+            width: 80%;
+
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            .socialLinks {
+                width: 480;
+                padding: 0;
+            }
+        }
+
+        .formInput {
+            width: 60%;
+
+            .form {
+                width: 100%;
+            }
+        }
     }
 }
 
-@media (max-width: 545px) {
+// Query for Phones - tablets
+@media (max-width: 481px) {
+
+    .body > section {
+        padding: 20px !important
+    }
+
     .navHeader{
         display: flex;
         flex-direction: column;
     }
-}
 
-@media (max-width: 320px) {
-
-
+    .contactSection {
+        flex-direction: column;
     }
 
+    .skillSection {
+        .skillTitleContainer {
+            h3 {
+                padding-bottom: 20px;
+            }
+        }
+
+        .skillListContainer {
+            width: 100%;
+        }
+    }
+
+    .aboutMe {
+        .aboutMeInfo {
+            width: 80%;
+        }
+    }
+
+    .projectsSection {
+        
+        h2 {
+            padding-left: initial;
+        }
+        .project {
+            flex-direction: column;
+            padding: 0;
+            margin-top: 45px;
+
+            .projectImageContainer {
+                width: 90%;
+                margin-right: initial;
+            }
+
+            .projectInfoContainer {
+                width: 90%;
+            }
+        }
+    }
+
+    .contactSection {
+        .contactSectionContainer {
+            width: 100%;
+
+            .infoSection {
+                width: 80%;
+            }
+
+        }
+        .formInput {
+            width: 100%;
+
+            .form {
+                padding: 0;
+            }
+        }
+    }
+}
 
 
 

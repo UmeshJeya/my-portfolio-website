@@ -226,33 +226,6 @@ html {
   overflow: hidden;
 }
 
-@media (max-width: 848px) {
-  .aboutMe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media (max-width: 738px) {
-  .nameTitle {
-    text-align: center;
-  }
-}
-@media (max-width: 545px) {
-  .navHeader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 header, p {
   font-size: 20px;
 }
@@ -328,6 +301,10 @@ html {
   font-family: "Francois One", sans-serif;
 }
 
+body > section {
+  padding: 40px;
+}
+
 .skillSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,8 +320,6 @@ html {
   min-height: 300px;
 }
 .skillSection .skillTitleContainer {
-  width: 15%;
-  margin-right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,9 +332,8 @@ html {
           justify-content: center;
 }
 .skillSection .skillTitleContainer h3 {
-  margin-bottom: 30px;
   font-size: 50px;
-  padding-left: 30px;
+  padding-bottom: 30px;
 }
 .skillSection .skillListContainer {
   display: -webkit-box;
@@ -369,21 +343,34 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-transform: none;
+  width: 50%;
+}
+.skillSection .skillListContainer > div {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
 }
 .skillSection .skillListContainer img {
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 60px;
 }
-.skillSection .skillListContainer .image1:hover, .skillSection .skillListContainer .image2:hover, .skillSection .skillListContainer .image3:hover, .skillSection .skillListContainer .image4:hover, .skillSection .skillListContainer .image5:hover, .skillSection .skillListContainer .image6:hover, .skillSection .skillListContainer .image7:hover, .skillSection .skillListContainer .image8:hover {
-  -webkit-transform: scale(1.75);
-          transform: scale(1.75);
+.skillSection .skillListContainer img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
-.skillSection .skillListContainer .image1:focus, .skillSection .skillListContainer .image2:focus, .skillSection .skillListContainer .image3:focus, .skillSection .skillListContainer .image4:focus, .skillSection .skillListContainer .image5:focus, .skillSection .skillListContainer .image6:focus, .skillSection .skillListContainer .image7:focus, .skillSection .skillListContainer .image8:focus {
-  -webkit-transform: scale(1.75);
-          transform: scale(1.75);
+.skillSection .skillListContainer img:focus {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 .skillSection .skillListContainer ul {
   margin-right: 50px;
@@ -404,8 +391,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 100px 0;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  height: 60vh;
 }
 .nameTitle div {
   margin-right: 10px;
@@ -470,19 +456,19 @@ html {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 0 50px;
 }
 .projectsSection .project .projectImageContainer {
-  width: 50%;
-  margin-right: 50px;
+  width: 30%;
+  margin-right: 30px;
 }
 .projectsSection .project .projectImageContainer img {
   width: 100%;
-  margin: 40px;
   border-radius: 10%;
 }
 .projectsSection .project .projectInfoContainer {
-  width: 100%;
-  padding: 200px;
+  width: 70%;
 }
 .projectsSection .project .projectInfoContainer .memeDiv, .projectsSection .project .projectInfoContainer .wordDiv {
   padding-top: 250px;
@@ -535,10 +521,17 @@ html {
   font-family: "Arsenal", sans-serif;
 }
 .contactSection .contactSectionContainer {
-  display: contents;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
 }
 .contactSection .socialLinks {
   display: -webkit-box;
@@ -550,19 +543,15 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 80px;
-  padding-right: 80px;
   font-size: 30px;
-}
-.contactSection .infoSection {
-  width: 20%;
-  margin-left: 200px;
+  width: 40%;
+  margin: 0 auto;
 }
 .contactSection h2 {
-  font-size: 50px;
+  font-size: 47px;
 }
 .contactSection .formInput {
-  width: 75%;
+  width: 50%;
 }
 .contactSection .formInput .form {
   display: -webkit-box;
@@ -572,7 +561,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding-left: 1rem;
 }
 .contactSection .formInput .form input {
@@ -666,4 +655,135 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutMe .aboutProfilePic {
+    width: 250px;
+  }
+  .aboutMe .aboutMeInfo {
+    width: 60%;
+  }
+  .aboutMe h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .skillSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectsSection .project {
+    padding: 0 25px;
+  }
+  .projectsSection .project .projectImageContainer {
+    width: 55%;
+  }
+  .projectsSection .project .projectInfoContainer {
+    width: 45%;
+  }
+  .contactSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 0;
+  }
+  .contactSection .infoSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: initial;
+    width: 80%;
+  }
+  .contactSection .infoSection h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contactSection .infoSection p {
+    margin-bottom: 10px;
+  }
+  .contactSection .infoSection .socialLinks {
+    width: 480;
+    padding: 0;
+  }
+  .contactSection .formInput {
+    width: 60%;
+  }
+  .contactSection .formInput .form {
+    width: 100%;
+  }
+}
+@media (max-width: 481px) {
+  .body > section {
+    padding: 20px !important;
+  }
+  .navHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skillSection .skillTitleContainer h3 {
+    padding-bottom: 20px;
+  }
+  .skillSection .skillListContainer {
+    width: 100%;
+  }
+  .aboutMe .aboutMeInfo {
+    width: 80%;
+  }
+  .projectsSection h2 {
+    padding-left: initial;
+  }
+  .projectsSection .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin-top: 45px;
+  }
+  .projectsSection .project .projectImageContainer {
+    width: 90%;
+    margin-right: initial;
+  }
+  .projectsSection .project .projectInfoContainer {
+    width: 90%;
+  }
+  .contactSection .contactSectionContainer {
+    width: 100%;
+  }
+  .contactSection .contactSectionContainer .infoSection {
+    width: 80%;
+  }
+  .contactSection .formInput {
+    width: 100%;
+  }
+  .contactSection .formInput .form {
+    padding: 0;
+  }
 }

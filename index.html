@@ -21,7 +21,7 @@
     <title>Umesh Jeyathevan | Toronto Web Developer</title>
     <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.png"/>
 </head>
-<body>
+<body class="body">
     <header>
         <p class="nameBar">uj</p>
             <nav class="navHeader">
@@ -41,11 +41,11 @@
         
         </section>
 <!-- About Section -->
-        <section class="aboutMe">
-            <img src="./assets/umesh.jpg" alt="profile picture">
-            <div id="about">
+        <section class="aboutMe"  id="about">
+            <img class="aboutProfilePic" src="./assets/umesh.jpg" alt="profile picture">
+            <div class="aboutMeInfo">
             <h2>about me</h2>
-            <p>Hello, My name is Umesh and I am a Front End Web Developer with a Behavior Science background. I strive to combine my knowledge of accessbility to create and build user - friendly and accessible applications for all! </p>
+            <p>Hello, My name is Umesh and I am a Front End Web Developer with a Behavior Science background. I strive to combine my knowledge of accessbility to create and build user friendly and accessible applications for all! </p>
             </div>
         </section>  
 <!-- End of About -->
@@ -55,16 +55,30 @@
             <h3>skills</h3>
                 </div>
             <div class="skillListContainer">
-                <ul>
-                <img src="./assets/HTML.png" class="image1" alt="HTML">
-                <img src="./assets/CSS.png" class="image2" alt="CSS">
-                <img src="./assets/SASS.png" class="image3" alt="SASS">
-                <img src="./assets/java-script.png" class="image4" alt="JavaScript">
-                <img src="./assets/react.png" class="image5" alt="React">
-                <img src="./assets/fire-base.png" class="image6" alt="Firebase">
-                <img src="./assets/git-hub.png" class="image7" alt="Github">
-                <img src="./assets/netlify.png" class="image8" alt="Netlify">
-                </ul>  
+                <div>
+                    <img src="./assets/HTML.png" class="image1" alt="HTML">
+                </div>
+                <div>
+                    <img src="./assets/CSS.png" class="image2" alt="CSS">
+                </div>
+                <div>
+                    <img src="./assets/SASS.png" class="image3" alt="SASS">
+                </div>
+                <div>
+                    <img src="./assets/java-script.png" class="image4" alt="JavaScript">
+                </div>
+                <div>
+                    <img src="./assets/react.png" class="image5" alt="React">
+                </div>
+                <div>
+                    <img src="./assets/fire-base.png" class="image6" alt="Firebase">
+                </div>
+                <div>
+                    <img src="./assets/git-hub.png" class="image7" alt="Github">
+                </div>
+                <div>
+                    <img src="./assets/netlify.png" class="image8" alt="Netlify"> 
+                </div>
             </div>
         </section>
 <!-- End of Skill Section -->
@@ -74,13 +88,10 @@
             <h2>Projects</h2>
             <div class="projectGallery">
                 <div class="project">
-                        <div class="projectImageContainer">
-                            <img src="./assets/pokemon-151.jpg" alt="pokedex">
-                            <img src="./assets/meme-collage.jpg" alt="memes">
-                            <img src="./assets/word-pic.png" alt="word">
-                        </div>
-                        
-                        <div class="projectInfoContainer">
+                    <div class="projectImageContainer">
+                        <img src="./assets/pokemon-151.jpg" alt="pokedex">
+                    </div>
+                    <div class="projectInfoContainer">
                             <h3>Pokedex</h3>
                             <h4>HTML | CSS | SASS | PAIR PROGRAMMING | GITHUB | RESTful API</h4>
                             <p>I created this website along with another developer to help Pokemon trainers all over the world to look up their favourite pokemon from generation 1!</p>
@@ -88,20 +99,13 @@
                                 <a href="https://thepokedexproject.netlify.app/">Live Site</a>
                                 <a href="https://github.com/Pokedex-Project/Pokedex-Project">View Code</a>
                             </div>
-                        
-                            
-                        <div class="memeDiv">
-                            <h3>Meme Generator</h3>
-                            <h4>REACT | GITHUB | CSS | RESTful API</h4>
-                            <p>I created a meme generator app that renders memes from an API onto the page which then allows the user to pick a meme and customize the words that will go onto the meme.</p>
-                            </div>
-                            <div class="linkContainer">
-                                <a href="https://meme-generatr.netlify.app/">Live Site</a>
-                                <a href="https://github.com/UmeshJeya/meme-generator">View Code</a>
-                            </div>
-                        
-                            
-                        <div class="wordDiv">
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="projectImageContainer">
+                        <img src="./assets/meme-collage.jpg" alt="memes">
+                    </div>
+                    <div class="projectInfoContainer">
                             <h3>Word party</h3>
                             <h4>REACT | GITHUB | CSS | RESTful API | FIREBASE | PAIR PROGRAMMING</h4>
                             <p>I created an app along with 2 other developers to help users expand their vocabulary and assist with creating rhymes. The app was created using React and Firebase along with an API to search and render the words to the page.</p>
@@ -109,10 +113,22 @@
                                 <a href="https://wordparty.netlify.app/">Live Site</a>
                                 <a href="https://github.com/Word-Party-46/word-party">View Code</a>
                             </div>
-                        
-                        </div>
-                 </div>
-          </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="projectImageContainer">
+                        <img src="./assets/word-pic.png" alt="word">
+                    </div>
+                    <div class="projectInfoContainer">
+                             <h3>Word party</h3>
+                            <h4>REACT | GITHUB | CSS | RESTful API | FIREBASE | PAIR PROGRAMMING</h4>
+                            <p>I created an app along with 2 other developers to help users expand their vocabulary and assist with creating rhymes. The app was created using React and Firebase along with an API to search and render the words to the page.</p>
+                            <div class="linkContainer">
+                                <a href="https://wordparty.netlify.app/">Live Site</a>
+                                <a href="https://github.com/Word-Party-46/word-party">View Code</a>
+                            </div>
+                    </div>
+                </div>
     </section>
     <!-- End of Project Section -->
     <!-- Start of Contact Section -->
@@ -127,6 +143,7 @@
                     <a href="mailto: umeshk.jeyathevan@gmail.com"><i class="fa-solid fa-envelope"></i></a> 
                 </div>
             </div>
+        </div>
         <div id="contact" class="formInput">
                     <form id="form" class="form" action="https://formspree.io/f/xdovdkjq" method="POST">
                         <!-- <label for="name">Name</label> -->
@@ -138,7 +155,6 @@
                         <button type="formSubmitButton">Submit</button>
                         <p id="formStatus"></p>
                     </form>
-                </div>
         </div>
     </section>
 <!-- End of Contact Section -->
