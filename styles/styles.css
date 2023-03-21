@@ -262,6 +262,14 @@ header a {
   text-decoration: none;
   margin-right: 50px;
 }
+header a:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+header a:focus {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
 header .contactBar {
   background-color: #FBAF01;
   width: 150px;
@@ -429,6 +437,7 @@ body > section {
 }
 .aboutMe h2 {
   font-size: 50px;
+  margin-bottom: 15px;
 }
 
 .projectsSection h2 {
@@ -470,6 +479,9 @@ body > section {
 .projectsSection .project .projectInfoContainer {
   width: 70%;
 }
+.projectsSection .project .projectInfoContainer h3, .projectsSection .project .projectInfoContainer h4 {
+  margin-top: 5px;
+}
 .projectsSection .project .projectInfoContainer .memeDiv, .projectsSection .project .projectInfoContainer .wordDiv {
   padding-top: 250px;
 }
@@ -502,6 +514,14 @@ body > section {
           justify-content: center;
   text-decoration: none;
   margin-right: 10px;
+}
+.projectsSection .project .projectInfoContainer .linkContainer a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.projectsSection .project .projectInfoContainer .linkContainer a:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contactSection {
@@ -546,6 +566,14 @@ body > section {
   font-size: 30px;
   width: 40%;
   margin: 0 auto;
+}
+.contactSection .socialLinks .linkOne:hover, .contactSection .socialLinks .linkTwo:hover, .contactSection .socialLinks .linkThree:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+.contactSection .socialLinks .linkOne:focus, .contactSection .socialLinks .linkTwo:focus, .contactSection .socialLinks .linkThree:focus {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 .contactSection h2 {
   font-size: 47px;
@@ -606,7 +634,7 @@ body > section {
           align-items: center;
   width: 100%;
   text-align: center;
-  background-color: green;
+  background-color: orange;
   padding: 0.5rem 1rem;
   border: none;
   -webkit-transition: 0.5s;
@@ -614,7 +642,7 @@ body > section {
 }
 .contactSection .formInput .form button:hover, .contactSection .formInput .form button:focus {
   color: blue;
-  background-color: orange;
+  background-color: rgba(243, 216, 45, 0.589);
 }
 .contactSection .formInput .form textarea {
   width: 100%;
@@ -754,7 +782,10 @@ footer {
     width: 100%;
   }
   .aboutMe .aboutMeInfo {
-    width: 80%;
+    width: 100%;
+  }
+  .aboutMe p {
+    padding-top: 15px;
   }
   .projectsSection h2 {
     padding-left: initial;

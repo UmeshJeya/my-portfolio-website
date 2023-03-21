@@ -11,8 +11,14 @@ header{
 
     a{
         text-decoration: none;
-        
         margin-right: 50px;
+        &:hover {
+                transform: scale(1.25);
+            }
+        
+            &:focus {
+                transform: scale(1.25);
+            }
    
     }
     .contactBar{
