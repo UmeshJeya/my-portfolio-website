@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-h2, h3, h4{
+h2, h3{
     font-family: 'Rampart One', cursive;
 }
 
@@ -22,6 +22,7 @@ body > section {
     background-color: #3D48AE;
     color: #fff;
     min-height: 300px;
+    padding-left: 145px;
         
         .skillTitleContainer {
             display: flex;
@@ -32,6 +33,10 @@ body > section {
                 font-size: 50px;
                 padding-bottom: 30px;
             }
+
+            p{
+                width: 100%;
+            }
             
         }
 
@@ -40,7 +45,7 @@ body > section {
             flex-direction: row;
             flex-wrap: wrap;
             text-transform: none;
-            width: 50%;
+            width: 150%;
 
             >div {
                 width: 25%;
@@ -52,6 +57,7 @@ body > section {
                  
             img {
                 width: 60px;
+                transition: all 0.5s ease;
                     &:hover {
                         transform: scale(1.25);
                     }
@@ -92,6 +98,7 @@ body > section {
     }
     p{
         font-family: 'Francois One', sans-serif;
+        line-height: 100px;
     }
     
 }
@@ -167,6 +174,7 @@ body > section {
             p{
                 font-family: 'Arsenal', sans-serif;
                 padding-top: 20px;
+                line-height: 30px;
             }
 
             .linkContainer{
@@ -183,6 +191,7 @@ body > section {
                     justify-content: center;
                     text-decoration: none;
                     margin-right: 10px;
+                    transition: all 0.5s ease;
 
                     &:hover {
                             transform: scale(1.1);
@@ -207,6 +216,7 @@ body > section {
     
     p{
         font-family: 'Arsenal', sans-serif;
+        line-height: 60px;
     }
    
     
@@ -223,9 +233,10 @@ body > section {
         font-size: 30px;
         width: 40%;
         margin: 0 auto;
+        margin-left: 0px;
         
         .linkOne, .linkTwo, .linkThree{
-
+            transition: all 0.5s ease;
             &:hover {
                     transform: scale(1.25);
                 }
@@ -258,7 +269,6 @@ body > section {
                         font-size: 1rem;
                         text-transform: lowercase;
                         font-family: 'Arsenal', sans-serif;
-                      
                     }
                 }
     
@@ -271,7 +281,8 @@ body > section {
                     background-color: orange;
                     padding: .5rem 1rem;
                     border: none;
-                    transition: 0.5s;
+                    transition: all 0.5s ease;
+                    font-family: 'Rampart One', cursive;
                     
                     &:hover,
                         &:focus {

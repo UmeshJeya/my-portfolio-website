@@ -238,51 +238,137 @@ h1, h2, h3 {
   font-size: 40px;
 }
 
-header {
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  min-height: 200vh;
+  font-family: "Cabin", Sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  background: black;
+  z-index: -1;
+}
+
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #3D0E61;
+  margin: 0px;
+  z-index: 9;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 50px;
+  z-index: 9;
 }
-header .navHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
 }
-header a {
+
+#main-menu a {
+  color: #B9FAF8;
+  font-size: 1.5rem;
   text-decoration: none;
-  margin-right: 50px;
 }
-header a:hover {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+
+#main-menu a:hover {
+  text-decoration: underline;
 }
-header a:focus {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+
+#hamburger-input {
+  display: none;
 }
-header .contactBar {
-  background-color: #FBAF01;
-  width: 150px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+
+#hamburger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Cabin", Sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3D0E61), color-stop(20%, #3D0E61), color-stop(20%, white), color-stop(40%, white), color-stop(40%, #3D0E61), color-stop(60%, #3D0E61), color-stop(60%, white), color-stop(80%, white), color-stop(80%, #3D0E61), to(#3D0E61));
+  background: linear-gradient(to bottom, #3D0E61, #3D0E61 20%, white 20%, white 40%, #3D0E61 40%, #3D0E61 60%, white 60%, white 80%, #3D0E61 80%, #3D0E61 100%);
+}
+
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: #3D0E61;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: #B9FAF8;
+  font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: #B9FAF8;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+
+#hamburger-input:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.4;
 }
 
 .nameBar {
@@ -301,7 +387,7 @@ header .contactBar {
   padding: 0;
 }
 
-h2, h3, h4 {
+h2, h3 {
   font-family: "Rampart One", cursive;
 }
 
@@ -326,6 +412,7 @@ body > section {
   background-color: #3D48AE;
   color: #fff;
   min-height: 300px;
+  padding-left: 145px;
 }
 .skillSection .skillTitleContainer {
   display: -webkit-box;
@@ -343,6 +430,9 @@ body > section {
   font-size: 50px;
   padding-bottom: 30px;
 }
+.skillSection .skillTitleContainer p {
+  width: 100%;
+}
 .skillSection .skillListContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,7 +444,7 @@ body > section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-transform: none;
-  width: 50%;
+  width: 150%;
 }
 .skillSection .skillListContainer > div {
   width: 25%;
@@ -371,6 +461,8 @@ body > section {
 }
 .skillSection .skillListContainer img {
   width: 60px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .skillSection .skillListContainer img:hover {
   -webkit-transform: scale(1.25);
@@ -412,6 +504,7 @@ body > section {
 }
 .nameTitle p {
   font-family: "Francois One", sans-serif;
+  line-height: 100px;
 }
 
 .aboutMe {
@@ -488,6 +581,7 @@ body > section {
 .projectsSection .project .projectInfoContainer p {
   font-family: "Arsenal", sans-serif;
   padding-top: 20px;
+  line-height: 30px;
 }
 .projectsSection .project .projectInfoContainer .linkContainer {
   display: -webkit-box;
@@ -514,6 +608,8 @@ body > section {
           justify-content: center;
   text-decoration: none;
   margin-right: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .projectsSection .project .projectInfoContainer .linkContainer a:hover {
   -webkit-transform: scale(1.1);
@@ -539,6 +635,7 @@ body > section {
 }
 .contactSection p {
   font-family: "Arsenal", sans-serif;
+  line-height: 60px;
 }
 .contactSection .contactSectionContainer {
   display: -webkit-box;
@@ -566,6 +663,11 @@ body > section {
   font-size: 30px;
   width: 40%;
   margin: 0 auto;
+  margin-left: 0px;
+}
+.contactSection .socialLinks .linkOne, .contactSection .socialLinks .linkTwo, .contactSection .socialLinks .linkThree {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .contactSection .socialLinks .linkOne:hover, .contactSection .socialLinks .linkTwo:hover, .contactSection .socialLinks .linkThree:hover {
   -webkit-transform: scale(1.25);
@@ -637,8 +739,9 @@ body > section {
   background-color: orange;
   padding: 0.5rem 1rem;
   border: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-family: "Rampart One", cursive;
 }
 .contactSection .formInput .form button:hover, .contactSection .formInput .form button:focus {
   color: blue;
@@ -686,6 +789,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
   .aboutMe {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -701,6 +810,9 @@ footer {
   .aboutMe h2 {
     margin-bottom: 10px;
     text-align: center;
+  }
+  .nameBar {
+    left: 280px;
   }
   .skillSection {
     -webkit-box-orient: vertical;
@@ -760,14 +872,11 @@ footer {
   .body > section {
     padding: 20px !important;
   }
-  .navHeader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .nameBar {
+    left: 280px;
+  }
+  .nameTitle {
+    height: 35vh;
   }
   .contactSection {
     -webkit-box-orient: vertical;
@@ -777,6 +886,9 @@ footer {
   }
   .skillSection .skillTitleContainer h3 {
     padding-bottom: 20px;
+  }
+  .skillSection .skillTitleContainer p {
+    padding-bottom: 30px;
   }
   .skillSection .skillListContainer {
     width: 100%;
@@ -810,6 +922,9 @@ footer {
   }
   .contactSection .contactSectionContainer .infoSection {
     width: 80%;
+  }
+  .contactSection .contactSectionContainer p {
+    line-height: 30px;
   }
   .contactSection .formInput {
     width: 100%;

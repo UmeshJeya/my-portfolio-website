@@ -1,5 +1,12 @@
 // Query for Tablets
 @media (max-width: 768px) {
+    #main-menu {
+            display: none;
+        }
+    
+        #hamburger-menu {
+            display: inline;
+        }
     .aboutMe{
             flex-direction: column;
 
@@ -16,7 +23,9 @@
             text-align: center;
         }
     }
-
+   .nameBar {
+       left: 280px;
+   }
     .skillSection {
         flex-direction: column;
     }
@@ -74,10 +83,11 @@
     .body > section {
         padding: 20px !important
     }
-
-    .navHeader{
-        display: flex;
-        flex-direction: column;
+    .nameBar{
+        left: 280px;
+    }
+    .nameTitle{
+        height: 35vh;
     }
 
     .contactSection {
@@ -88,6 +98,9 @@
         .skillTitleContainer {
             h3 {
                 padding-bottom: 20px;
+            }
+            p{
+                padding-bottom: 30px;
             }
         }
 
@@ -133,7 +146,10 @@
             .infoSection {
                 width: 80%;
             }
-
+           
+            p{
+                line-height: 30px;
+            }
         }
         .formInput {
             width: 100%;

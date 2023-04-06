@@ -24,12 +24,29 @@
 <body class="body">
     <header>
         <p class="nameBar">uj</p>
-            <nav class="navHeader">
-                    <a href="#home">home</a>
-                    <a href="#about">about</a>
-                    <a href="#projects">projects</a>
-                    <a class="contactBar" href="#contact">get in touch</a>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a class="contactBar" href="#contact">get in touch</a></li>
+                </ul>
             </nav>
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+<label id="hamburger-menu" for="hamburger-input">
+  <nav id="sidebar-menu">
+    <h3>Menu</h3>
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">get in touch</a></li>
+    </ul>
+  </nav>
+</label>
+
+<div class="overlay"></div>
+            
         </header>
   
 
@@ -45,7 +62,7 @@
             <img class="aboutProfilePic" src="./assets/umesh.jpg" alt="profile picture">
             <div class="aboutMeInfo">
             <h2>about me</h2>
-            <p>Hello, My name is Umesh and I am a Front End Web Developer with a Behavior Science background. I strive to combine my knowledge of accessbility to create and build user friendly and accessible applications for all! </p>
+            <p>My name is Umesh, and I am a front-end developer based in Toronto! I’ve completed Juno college's (formerly HackerYou) web development bootcamp and I have a past degree in Behaviour Science Technology from George Brown College. I’ve always enjoyed being in customer-focused roles that required analytical skills and adaptability. These experiences have reinforced my passion to develop accessible and responsive applications using my skills in HTML, CSS, React, and other web technologies. I’m open to in-office, hybrid or remote opportunities in the GTA, and if you’re hiring, I’d love to meet with you to see if there might be a mutual fit! </p>
             </div>
         </section>  
 <!-- End of About -->
@@ -53,6 +70,7 @@
         <section class="skillSection">
                 <div class="skillTitleContainer">
             <h3>skills</h3>
+            <p>I take great pride in being fluent in the skills displayed and continuously improving!</p>
                 </div>
             <div class="skillListContainer">
                 <div>
