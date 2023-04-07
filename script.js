@@ -28,3 +28,18 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit)
+
+function toggleMenuOn() {
+    let element = document.getElementById('sidebar-menu')
+    element.classList = "showMenu"
+    console.log('zz fire function', element)
+}
+
+function toggleMenuOff(event) {
+    event.stopPropagation()
+    let element = document.getElementById('sidebar-menu')
+    console.log('zz element',element.classList)
+  
+    element.classList = "hideMenu"
+    console.log('zz fire function', element)
+}

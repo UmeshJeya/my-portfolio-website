@@ -257,7 +257,6 @@ body {
   -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
-  background: black;
   z-index: -1;
 }
 
@@ -326,7 +325,6 @@ body {
   visibility: hidden;
   position: fixed;
   top: 0;
-  left: -250px;
   width: 200px;
   height: 100%;
   background-color: #3D0E61;
@@ -335,6 +333,16 @@ body {
   padding: 0px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 1px solid blue;
+}
+
+.hideMenu {
+  left: -250px;
+}
+
+.showMenu {
+  visibility: visible !important;
+  left: 0;
 }
 
 #hamburger-menu h3 {
@@ -361,25 +369,24 @@ body {
   text-decoration: underline;
 }
 
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
-  visibility: visible;
-  left: 0;
-}
-
 #hamburger-input:checked ~ .overlay {
   visibility: visible;
   opacity: 0.4;
+}
+
+#hamburger-input[type=checkbox] :checked {
+  visibility: visible;
+}
+
+#hamburger-input[type=checkbox] {
+  visibility: hidden;
 }
 
 .nameBar {
   position: relative;
   font-family: "Francois One", sans-serif;
   font-size: 40px;
-}
-.nameBar a {
-  text-decoration: none;
-  margin-left: 50px;
-  margin-top: 10px;
+  color: #B9FAF8;
 }
 
 * {
@@ -532,6 +539,9 @@ body > section {
   font-size: 50px;
   margin-bottom: 15px;
 }
+.aboutMe p {
+  line-height: 1.4;
+}
 
 .projectsSection h2 {
   padding-left: 100px;
@@ -610,6 +620,9 @@ body > section {
   margin-right: 10px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  padding: 10px 0 7px 0;
+  line-height: 1;
+  border-radius: 3px;
 }
 .projectsSection .project .projectInfoContainer .linkContainer a:hover {
   -webkit-transform: scale(1.1);
@@ -742,6 +755,7 @@ body > section {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-family: "Rampart One", cursive;
+  cursor: pointer;
 }
 .contactSection .formInput .form button:hover, .contactSection .formInput .form button:focus {
   color: blue;
@@ -877,6 +891,9 @@ footer {
   }
   .nameTitle {
     height: 35vh;
+  }
+  .nameTitle h2 {
+    padding-top: 80px;
   }
   .contactSection {
     -webkit-box-orient: vertical;

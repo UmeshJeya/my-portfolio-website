@@ -23,18 +23,18 @@
 </head>
 <body class="body">
     <header>
-        <p class="nameBar">uj</p>
-            <nav id="main-menu">
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a class="contactBar" href="#contact">get in touch</a></li>
-                </ul>
-            </nav>
-            <input type="checkbox" id="hamburger-input" class="burger-shower" />
-<label id="hamburger-menu" for="hamburger-input">
-  <nav id="sidebar-menu">
+        <nav id="main-menu">
+            <ul>
+                <p class="nameBar">uj</p>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a class="contactBar" href="#contact">get in touch</a></li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label onclick="toggleMenuOn()" id="hamburger-menu" for="hamburger-input">
+  <nav  onclick="toggleMenuOff(event)" id="sidebar-menu" class="hideMenu hamMenu">
     <h3>Menu</h3>
     <ul>
       <li><a href="#home">home</a></li>
@@ -43,20 +43,16 @@
       <li><a href="#contact">get in touch</a></li>
     </ul>
   </nav>
-</label>
-
-<div class="overlay"></div>
-            
-        </header>
-  
-
-        <section class="nameTitle">
+        </label>
+  <div class="overlay"></div>
+    </header>
+        
+    <section class="nameTitle">
         <div>
             <h2>umesh jeyathevan</h2>
             <p>toronto based web developer</p>
         </div>
-        
-        </section>
+    </section>
 <!-- About Section -->
         <section class="aboutMe"  id="about">
             <img class="aboutProfilePic" src="./assets/umesh.jpg" alt="profile picture">

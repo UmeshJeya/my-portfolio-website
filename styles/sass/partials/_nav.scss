@@ -16,7 +16,6 @@ body {
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-    background: black;
     z-index: -1;
 }
 
@@ -83,13 +82,23 @@ body {
     visibility: hidden;
     position: fixed;
     top: 0;
-    left: -250px;
+    // left: -250px;
     width: 200px;
     height: 100%;
     background-color: #3D0E61;
     transition: 0.3s;
     padding: 0px 10px;
     box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.hideMenu {
+    left: -250px;
+}
+
+.showMenu {
+        visibility: visible !important;
+        left: 0;
 }
 
 #hamburger-menu h3 {
@@ -116,29 +125,30 @@ body {
     text-decoration: underline;
 }
 
-#hamburger-input:checked+#hamburger-menu #sidebar-menu {
-    visibility: visible;
-    left: 0;
-}
+// #hamburger-input:checked+#hamburger-menu #sidebar-menu {
+//     visibility: visible;
+
+//     left: 0;
+// }
 
 #hamburger-input:checked~.overlay {
     visibility: visible;
     opacity: 0.4;
 }
 
+#hamburger-input[type="checkbox"] :checked {
+    visibility: visible;
+}
+
+#hamburger-input[type="checkbox"] {
+    visibility: hidden;
+}
+
 .nameBar {
         position: relative;
-    
-    a{
-        text-decoration: none;
-        margin-left: 50px;
-        margin-top: 10px;
-    }
-
-        font-family: 'Francois One',
-        sans-serif;
-
+        font-family: 'Francois One', sans-serif;
         font-size: 40px;
+        color: #B9FAF8;
 }
 
 
